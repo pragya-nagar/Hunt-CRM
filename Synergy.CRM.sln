@@ -1,0 +1,104 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Synergy.CRM.API", "Synergy.CRM.API\Synergy.CRM.API.csproj", "{7DC90B41-2AEB-49AC-996B-19C55BA70584}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{5A822F81-439C-4C3A-833A-8DD7EE08F2C7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Synergy.CRM.Domain", "Synergy.CRM.Domain\Synergy.CRM.Domain.csproj", "{A00897B6-7877-470D-AE80-67792172060B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E2120018-10D0-41E6-BB93-28E9765CDF69}"
+	ProjectSection(SolutionItems) = preProject
+		nuget.config = nuget.config
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Synergy.CRM.Models", "Synergy.CRM.Models\Synergy.CRM.Models.csproj", "{DE6A9131-EE94-4D00-850B-5B2BF08FC2CE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Synergy.CRM.Services.Host", "Synergy.CRM.Services.Host\Synergy.CRM.Services.Host.csproj", "{1015FA8E-A71B-431E-B622-BE82CEEB3109}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Synergy.CRM.Services", "Synergy.CRM.Services\Synergy.CRM.Services.csproj", "{17997052-1CFA-44CF-9063-E54FE9BEC706}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Synergy.CRM.Services", "Synergy.CRM.Services", "{32A72EE5-DA79-4699-A5E0-9AC169590729}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Synergy.CRM.DAL.Query", "Synergy.CRM.DAL.Query", "{50D7AE1F-4599-4C63-BEF8-E065E33B8B36}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Synergy.CRM.DAL.Queries.PostgreSQL", "Synergy.CRM.DAL.Queries.PostgreSQL\Synergy.CRM.DAL.Queries.PostgreSQL.csproj", "{FCC72BF1-609B-436C-8630-9D3D3638820F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Synergy.CRM.DAL.Queries.Entities", "Synergy.CRM.DAL.Queries.Entities\Synergy.CRM.DAL.Queries.Entities.csproj", "{443249BC-BD23-41ED-BAFA-079CC34188DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Synergy.CRM.DAL.Queries.Original", "Synergy.CRM.DAL.Queries.Original\Synergy.CRM.DAL.Queries.Original.csproj", "{2D6B8333-E79F-426A-A485-06BE158176C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Synergy.CRM.DAL.Command", "Synergy.CRM.DAL.Command", "{82C39597-B434-4CDA-A1B5-57788591983C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Synergy.CRM.DAL.Commands", "Synergy.CRM.DAL.Commands\Synergy.CRM.DAL.Commands.csproj", "{999979D8-0E19-463A-9046-E22EAB374223}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Synergy.CRM.Simplified", "..\Synergy.CRM.Simplified\Synergy.CRM.Simplified.csproj", "{FBED1745-E062-4D5C-A3DF-BD517F430817}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DC90B41-2AEB-49AC-996B-19C55BA70584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DC90B41-2AEB-49AC-996B-19C55BA70584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DC90B41-2AEB-49AC-996B-19C55BA70584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DC90B41-2AEB-49AC-996B-19C55BA70584}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A822F81-439C-4C3A-833A-8DD7EE08F2C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A822F81-439C-4C3A-833A-8DD7EE08F2C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A822F81-439C-4C3A-833A-8DD7EE08F2C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A822F81-439C-4C3A-833A-8DD7EE08F2C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A00897B6-7877-470D-AE80-67792172060B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A00897B6-7877-470D-AE80-67792172060B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A00897B6-7877-470D-AE80-67792172060B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A00897B6-7877-470D-AE80-67792172060B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE6A9131-EE94-4D00-850B-5B2BF08FC2CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE6A9131-EE94-4D00-850B-5B2BF08FC2CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE6A9131-EE94-4D00-850B-5B2BF08FC2CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE6A9131-EE94-4D00-850B-5B2BF08FC2CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1015FA8E-A71B-431E-B622-BE82CEEB3109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1015FA8E-A71B-431E-B622-BE82CEEB3109}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1015FA8E-A71B-431E-B622-BE82CEEB3109}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1015FA8E-A71B-431E-B622-BE82CEEB3109}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17997052-1CFA-44CF-9063-E54FE9BEC706}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17997052-1CFA-44CF-9063-E54FE9BEC706}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17997052-1CFA-44CF-9063-E54FE9BEC706}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17997052-1CFA-44CF-9063-E54FE9BEC706}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCC72BF1-609B-436C-8630-9D3D3638820F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCC72BF1-609B-436C-8630-9D3D3638820F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCC72BF1-609B-436C-8630-9D3D3638820F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCC72BF1-609B-436C-8630-9D3D3638820F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{443249BC-BD23-41ED-BAFA-079CC34188DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{443249BC-BD23-41ED-BAFA-079CC34188DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{443249BC-BD23-41ED-BAFA-079CC34188DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{443249BC-BD23-41ED-BAFA-079CC34188DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D6B8333-E79F-426A-A485-06BE158176C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D6B8333-E79F-426A-A485-06BE158176C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D6B8333-E79F-426A-A485-06BE158176C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D6B8333-E79F-426A-A485-06BE158176C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{999979D8-0E19-463A-9046-E22EAB374223}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{999979D8-0E19-463A-9046-E22EAB374223}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{999979D8-0E19-463A-9046-E22EAB374223}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{999979D8-0E19-463A-9046-E22EAB374223}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBED1745-E062-4D5C-A3DF-BD517F430817}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBED1745-E062-4D5C-A3DF-BD517F430817}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBED1745-E062-4D5C-A3DF-BD517F430817}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBED1745-E062-4D5C-A3DF-BD517F430817}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1015FA8E-A71B-431E-B622-BE82CEEB3109} = {32A72EE5-DA79-4699-A5E0-9AC169590729}
+		{17997052-1CFA-44CF-9063-E54FE9BEC706} = {32A72EE5-DA79-4699-A5E0-9AC169590729}
+		{FCC72BF1-609B-436C-8630-9D3D3638820F} = {50D7AE1F-4599-4C63-BEF8-E065E33B8B36}
+		{443249BC-BD23-41ED-BAFA-079CC34188DF} = {50D7AE1F-4599-4C63-BEF8-E065E33B8B36}
+		{2D6B8333-E79F-426A-A485-06BE158176C7} = {50D7AE1F-4599-4C63-BEF8-E065E33B8B36}
+		{999979D8-0E19-463A-9046-E22EAB374223} = {82C39597-B434-4CDA-A1B5-57788591983C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {34D2BE17-E6EA-4234-AB0C-C37CFBBA59A3}
+	EndGlobalSection
+EndGlobal

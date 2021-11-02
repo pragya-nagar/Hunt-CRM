@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <CodeAnalysisRuleSet>..\Synergy.ruleset</CodeAnalysisRuleSet>
+    <LangVersion>latest</LangVersion>
+    <NoWarn>CA1710</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.1.1" />
+    <PackageReference Include="FluentValidation" Version="8.4.0" />
+    <PackageReference Include="EPPlus.Core" Version="1.5.4" />
+    <PackageReference Include="iTextSharp-LGPL" Version="4.1.6">
+      <NoWarn>NU1701</NoWarn>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.0.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.2.0" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Synergy.Common" Version="4.20.4" />
+    <PackageReference Include="Synergy.Common.Analyzers" Version="4.20.4" />
+    <PackageReference Include="Synergy.Common.Domain.Models" Version="4.20.4" />
+    <PackageReference Include="Synergy.DataAccess.Dictionaries.Queries" Version="4.20.42" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Synergy.CRM.DAL.Queries.Entities\Synergy.CRM.DAL.Queries.Entities.csproj" />
+    <ProjectReference Include="..\Synergy.CRM.DAL.Queries.Original\Synergy.CRM.DAL.Queries.Original.csproj" />
+    <ProjectReference Include="..\Synergy.CRM.Models\Synergy.CRM.Models.csproj" />
+  </ItemGroup>
+
+</Project>

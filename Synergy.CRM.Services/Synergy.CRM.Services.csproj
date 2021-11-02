@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <CodeAnalysisRuleSet>..\Synergy.ruleset</CodeAnalysisRuleSet>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EPPlus.Core" Version="1.5.4" />
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.2.0" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Synergy.Common.Analyzers" Version="4.20.4" />
+    <PackageReference Include="Synergy.Common.FileStorage.Abstraction" Version="4.20.4" />
+    <PackageReference Include="Synergy.Common.Logging" Version="4.20.4" />
+
+    <PackageReference Include="Synergy.ServiceBus.Abstracts" Version="4.20.4" />
+
+    <PackageReference Include="Synergy.ServiceBus.Extensions" Version="4.20.4" />
+
+    <PackageReference Include="Synergy.ServiceBus.Messages" Version="4.20.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Synergy.CRM.DAL.Commands\Synergy.CRM.DAL.Commands.csproj" />
+    <ProjectReference Include="..\Synergy.CRM.Models\Synergy.CRM.Models.csproj" />
+  </ItemGroup>
+
+</Project>
